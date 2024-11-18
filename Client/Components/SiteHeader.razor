@@ -1,0 +1,86 @@
+﻿@inject ISettingService SettingService
+@inherits ThemeBase
+<header class="header">
+    <div class="container">
+        <nav class="menubar">
+            <a href="#"
+               class="menubar__brand">
+                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/logo.svg"
+                     alt="Logo"
+                     class="menubar__logo" />
+            </a>
+
+            <div class="main-menu main-menu__desktop">
+                <div class="menu">
+                    <a class="menu__link"
+                       href="#">About</a>
+                    <a class="menu__link"
+                       href="#">Products</a>
+                </div>
+
+                <a href="#"
+                   class="cart">
+                    <i class="icon-cart"></i>
+                    <span class="cart__badge">2</span>
+                </a>
+
+                <RLogin ShowLogin="@_login"/>
+                <ControlPanel />
+
+            </div>
+
+            <div class="main-menu main-menu__mobile">
+                <div class="menu">
+                    <div class="mobile__user">
+                        <p class="mobile__user-name">Jack Nikson</p>
+                        <a class="mobile__user-link"
+                           href="">Account Information</a>
+                    </div>
+
+                    <div class="menu__items">
+                        <div class="menu__label">
+                            <p>Menus</p>
+                        </div>
+                        <a class="menu__link"
+                           href="#">Home</a>
+                        <a class="menu__link"
+                           href="#">Products</a>
+                    </div>
+                    <div class="menu__items menu__items__second">
+                        <div class="menu__label">
+                            <p>Others</p>
+                        </div>
+                        <a class="menu__link"
+                           href="#">My Order</a>
+                        <a class="menu__link"
+                           href="#">Change Password</a>
+                        <a class="menu__link"
+                           href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="toggle-menu">
+                <i class="icon-hamburger-menu"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+@code {
+
+    private bool _login = true;
+    private bool _register = true;
+    protected override void OnParametersSet()
+    {
+        try
+        {
+            var settings = SettingService.MergeSettings(PageState.Site.Settings, PageState.Page.Settings);
+            _login = bool.Parse(SettingService.GetSetting(settings, GetType().Namespace + ":Login", "true"));
+            _register = bool.Parse(SettingService.GetSetting(settings, GetType().Namespace + ":Register", "true"));
+        }
+        catch
+        {
+            // error loading theme settings
+        }
+    }
+}

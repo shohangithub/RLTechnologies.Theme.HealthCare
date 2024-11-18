@@ -1,0 +1,689 @@
+@namespace RLTechnologies.Theme.HealthCare
+@inherits ThemeBase
+@inject ISettingService SettingService
+
+ <main role="main">
+<SiteHeader></SiteHeader>
+<!--Default Pane for requied-->    
+<Pane Name="@PaneNames.Default" />
+
+    <!--Banner Section Start-->
+    
+    <section>
+        <div class="hero container">
+            <div class="hero__content">
+                <Pane Name="banner__section" />
+                <h1 class="hero__title">
+                    Lorem ipsum dolor sit amet consectetur
+                    <span>vitae lectus ultricies risus.</span>
+                </h1>
+
+                <h3 class="hero__subtitle">
+                    Lorem ipsum dolor sit amet consectetur
+                </h3>
+
+                <p class="hero__text">
+                    Lorem ipsum dolor sit amet consectetur. Vitae lectus ultricies
+                    risus varius enim euismod. Vitae in tempor euismod proin arcu
+                    condimentum. Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                    ultricies risus varius enim euismod. Vitae in tempor euismod proin
+                    arcu condimentum.
+                </p>
+
+                <div class="hero__cta">
+                    <button type="button"
+                            class="dnn-btn dnn-btn__primary dnn-btn__primary--hero">
+                        Primary
+                    </button>
+                    <button type="button"
+                            class="dnn-btn dnn-btn__secondary dnn-btn__secondary--hero">
+                        Secondary
+                    </button>
+                </div>
+            </div>
+            <div class="hero__img">
+                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/hero-img.png"
+                     alt="Medicine" />
+            </div>
+        </div>
+    </section>
+
+    <!--About Section start-->
+    <section class="about-us">
+        <Pane Name="about_us__section" />
+        <div class="container">
+            <h1 class="about-us__title text-center">About Us</h1>
+            <p class="about-us__text text-center mb-30">
+                At H.Care Pharma, we are dedicated to improving your health and
+                well-being. With a focus on innovative treatments and exceptional
+                customer service, we strive to make healthcare accessible and
+                affordable for everyone. Our team of experts is committed to
+                providing you with the best products and support.
+            </p>
+        </div>
+    </section>
+
+    <!--Products Section start-->
+    <section class="products">
+        <div>
+            <h1 class="about-us__title text-center mt-0">Our Products</h1>
+
+            <!-- <h1 class="products__subtitle text-center">
+              Best Quality Skincare Products
+            </h1>
+            <p class="products__text text-center">
+              Lorem ipsum dolor sit amet consectetur. Vitae lectus ultricies risus
+              varius enim euismod. Vitae in tempor euismod proin arcu condimentum
+              amar pulvinar ut mauris id phasellus tortor lobortis.
+            </p> -->
+
+            <div class="">
+                <div class="products__list swiper">
+                    <div class="swiper-wrapper products-wrapper">
+                        <div class="product swiper-slide">
+                            <div class="product-content">
+                                <div class="product__img">
+                                    <img src="/Themes/RLTechnologies.Theme.HealthCare/img/product-3.png"
+                                         alt="product" />
+                                </div>
+
+                                <h4 class="product__title">
+                                    Oral Theron <br />
+                                    Tirzepatide Medication
+                                </h4>
+                                <p class="product__type">Capsule</p>
+
+                                <button type="button"
+                                        class="dnn-btn dnn-btn__secondary dnn-btn__block">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product swiper-slide">
+                            <div class="product__img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/product-1.png"
+                                     alt="product" />
+                            </div>
+
+                            <h4 class="product__title">
+                                Oral Theron <br />
+                                Tirzepatide Medication
+                            </h4>
+                            <p class="product__type">Capsule</p>
+
+                            <button type="button"
+                                    class="dnn-btn dnn-btn__secondary dnn-btn__block">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product swiper-slide">
+                            <div class="product__img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/product-2.png"
+                                     alt="product" />
+                            </div>
+
+                            <h4 class="product__title">
+                                Oral Theron <br />
+                                Tirzepatide Medication
+                            </h4>
+                            <p class="product__type">Capsule</p>
+
+                            <button type="button"
+                                    class="dnn-btn dnn-btn__secondary dnn-btn__block">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product swiper-slide">
+                            <div class="product__img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/product-3.png"
+                                     alt="product" />
+                            </div>
+
+                            <h4 class="product__title">
+                                Oral Theron <br />
+                                Tirzepatide Medication
+                            </h4>
+                            <p class="product__type">Capsule</p>
+
+                            <button type="button"
+                                    class="dnn-btn dnn-btn__secondary dnn-btn__block">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product swiper-slide">
+                            <div class="product__img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/product-4.png"
+                                     alt="product" />
+                            </div>
+
+                            <h4 class="product__title">
+                                Oral Theron <br />
+                                Tirzepatide Medication
+                            </h4>
+                            <p class="product__type">Capsule</p>
+
+                            <button type="button"
+                                    class="dnn-btn dnn-btn__secondary dnn-btn__block">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product swiper-slide">
+                            <div class="product__img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/product-2.png"
+                                     alt="product" />
+                            </div>
+
+                            <h4 class="product__title">
+                                Oral Theron <br />
+                                Tirzepatide Medication
+                            </h4>
+                            <p class="product__type">Capsule</p>
+
+                            <button type="button"
+                                    class="dnn-btn dnn-btn__secondary dnn-btn__block">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product swiper-slide">
+                            <div class="product__img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/product-1.png"
+                                     alt="product" />
+                            </div>
+
+                            <h4 class="product__title">
+                                Oral Theron <br />
+                                Tirzepatide Medication
+                            </h4>
+                            <p class="product__type">Capsule</p>
+
+                            <button type="button"
+                                    class="dnn-btn dnn-btn__secondary dnn-btn__block">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product swiper-slide">
+                            <div class="product__img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/product-2.png"
+                                     alt="product" />
+                            </div>
+
+                            <h4 class="product__title">
+                                Oral Theron <br />
+                                Tirzepatide Medication
+                            </h4>
+                            <p class="product__type">Capsule</p>
+
+                            <button type="button"
+                                    class="dnn-btn dnn-btn__secondary dnn-btn__block">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next products__next-btn">
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="swiper-button-prev products__prev-btn">
+                        <i class="icon-arrow"></i>
+                    </div>
+                </div>
+
+                <div class="products__cta text-center">
+                    <button type="button"
+                            class="dnn-btn dnn-btn__primary">
+                        View All Products
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Products Section end-->
+    <!--How it works Section start-->
+    <section class="how-works">
+        <div class="container">
+            <div class="how-works__head">
+                <h4 class="text-center text-uppercase">HOW IT WORKS</h4>
+                <h1 class="text-center">Seamless Delivery System</h1>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur. Vitae lectus ultricies
+                    risus varius enim euismod. Vitae in tempor euismod proin arcu
+                    condimentum amar pulvinar ut mauris id phasellus tortor lobortis.
+                    Lorem ipsum dolor sit amet consectetur.
+                </p>
+            </div>
+            <div class="how-works__all-process">
+                <div class="single-process">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-7 single-process__content-part">
+                            <div class="single-process__wrapper">
+                                <div class="single-process__number">
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <h2>Complete Medical Intake</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                        ultricies risus varius enim euismod. Vitae in tempor
+                                        euismod proin arcu condimentum amar pulvinar ut mauris
+                                        id phasellus tortor lobortis. Lorem ipsum dolor sit amet
+                                        consectetur. Vitae lectus ultricies risus varius enim
+                                        euismod. Vitae in tempor euismod proin arcu condimentum
+                                        amar pulvinar ut mauris id phasellus tortor lobortis.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="single-process__infographic-one">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/frame/process-frame-1.svg"
+                                     alt="process frame" />
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-5">
+                            <div class="text-right">
+                                <img class="single-process__image"
+                                     src="/Themes/RLTechnologies.Theme.HealthCare/img/infographic-1.png"
+                                     alt="Infographic" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Single Process End-->
+
+                <div class="single-process padding-bottom">
+                    <div class="row">
+                        <div class="col-md-5 col-lg-6 single-process__image-part">
+                            <div>
+                                <img class="single-process__image"
+                                     src="/Themes/RLTechnologies.Theme.HealthCare/img/infographic-2.png"
+                                     alt="Infographic" />
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-lg-6 single-process__content-part">
+                            <div class="single-process__wrapper">
+                                <div class="single-process__number">
+                                    <span>2</span>
+                                </div>
+                                <div>
+                                    <h2>Meet With Doctor</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                        ultricies risus varius enim euismod. Vitae in tempor
+                                        euismod proin arcu condimentum amar pulvinar ut mauris
+                                        id phasellus tortor lobortis. Lorem ipsum dolor sit amet
+                                        consectetur. Vitae lectus ultricies risus varius enim
+                                        euismod. Vitae in tempor euismod proin arcu condimentum
+                                        amar pulvinar ut mauris id phasellus tortor lobortis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Single Process End-->
+
+                <div class="single-process pb-0">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-7 single-process__content-part">
+                            <div class="single-process__infographic-two">
+                                <img class="single-process__image"
+                                     src="/Themes/RLTechnologies.Theme.HealthCare/img/frame/process-frame-2.svg"
+                                     alt="process frame" />
+                            </div>
+                            <div class="single-process__wrapper">
+                                <div class="single-process__number">
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <h2>Receive Medication</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                        ultricies risus varius enim euismod. Vitae in tempor
+                                        euismod proin arcu condimentum amar pulvinar ut mauris
+                                        id phasellus tortor lobortis. Lorem ipsum dolor sit amet
+                                        consectetur. Vitae lectus ultricies risus varius enim
+                                        euismod. Vitae in tempor euismod proin arcu condimentum
+                                        amar pulvinar ut mauris id phasellus tortor lobortis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-5">
+                            <div class="text-right">
+                                <img class="single-process__image"
+                                     src="/Themes/RLTechnologies.Theme.HealthCare/img/infographic-3.png"
+                                     alt="Infographic" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Single Process End-->
+            </div>
+        </div>
+    </section>
+    <!--How it works Section end-->
+    <!--Clients Section end-->
+    <section class="clients">
+        <div>
+            <div class="clients__head">
+                <h4 class="clients__subtitle text-center text-uppercase">
+                    CLIENT REVIEWS
+                </h4>
+                <h1 class="clients__subtitle text-center">
+                    What People Say About Us
+                </h1>
+                <p class="clients__text text-center">
+                    Lorem ipsum dolor sit amet consectetur. Vitae lectus ultricies
+                    risus varius enim euismod. Vitae in tempor euismod proin arcu
+                    condimentum amar pulvinar ut mauris id phasellus tortor lobortis.
+                    Lorem ipsum dolor sit amet consectetur.
+                </p>
+            </div>
+
+            <div class="">
+                <div class="clients__list swiper">
+                    <div class="swiper-wrapper">
+                        <div class="single-client swiper-slide">
+                            <div class="single-client__quote-img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/quote.svg"
+                                     alt="quote" />
+                            </div>
+                            <p class="single-client__quote-text">
+                                Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                ultricies risus varius enim euismod. Vitae in tempor euismod
+                                proin arcu condimentum amar pulvinar ut mauris id phasellus
+                                tortor lobortis. Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                            <div class="single-client__avatar">
+                                <div>
+                                    <img src="/Themes/RLTechnologies.Theme.HealthCare/img/client-1.png"
+                                         alt="client" />
+                                </div>
+                                <div>
+                                    <p class="single-client__avatar__name">Emily Chang</p>
+                                    <p class="single-client__avatar__designation">
+                                        CEO, Docly
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single client end-->
+
+                        <div class="single-client swiper-slide">
+                            <div class="single-client__quote-img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/quote.svg"
+                                     alt="quote" />
+                            </div>
+                            <p class="single-client__quote-text">
+                                Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                ultricies risus varius enim euismod. Vitae in tempor euismod
+                                proin arcu condimentum amar pulvinar ut mauris id phasellus
+                                tortor lobortis. Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                            <div class="single-client__avatar">
+                                <div>
+                                    <img src="/Themes/RLTechnologies.Theme.HealthCare/img/client-1.png"
+                                         alt="client" />
+                                </div>
+                                <div>
+                                    <p class="single-client__avatar__name">Emily Chang</p>
+                                    <p class="single-client__avatar__designation">
+                                        CEO, Docly
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single client end-->
+                        <div class="single-client swiper-slide">
+                            <div class="single-client__quote-img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/quote.svg"
+                                     alt="quote" />
+                            </div>
+                            <p class="single-client__quote-text">
+                                Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                ultricies risus varius enim euismod. Vitae in tempor euismod
+                                proin arcu condimentum amar pulvinar ut mauris id phasellus
+                                tortor lobortis. Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                            <div class="single-client__avatar">
+                                <div>
+                                    <img src="/Themes/RLTechnologies.Theme.HealthCare/img/client-1.png"
+                                         alt="client" />
+                                </div>
+                                <div>
+                                    <p class="single-client__avatar__name">Emily Chang</p>
+                                    <p class="single-client__avatar__designation">
+                                        CEO, Docly
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single client end-->
+                        <div class="single-client swiper-slide">
+                            <div class="single-client__quote-img">
+                                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/quote.svg"
+                                     alt="quote" />
+                            </div>
+                            <p class="single-client__quote-text">
+                                Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                ultricies risus varius enim euismod. Vitae in tempor euismod
+                                proin arcu condimentum amar pulvinar ut mauris id phasellus
+                                tortor lobortis. Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                            <div class="single-client__avatar">
+                                <div>
+                                    <img src="/Themes/RLTechnologies.Theme.HealthCare/img/client-1.png"
+                                         alt="client" />
+                                </div>
+                                <div>
+                                    <p class="single-client__avatar__name">Emily Chang</p>
+                                    <p class="single-client__avatar__designation">
+                                        CEO, Docly
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single client end-->
+                    </div>
+                    <div class="swiper-button-next clients__next-btn">
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="swiper-button-prev clients__prev-btn">
+                        <i class="icon-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Clients Section end-->
+    <!--FAQ Section end-->
+    <section class="faq">
+        <div>
+            <div class="container">
+                <div class="faq__head">
+                    <h4 class="faq__subtitle text-center text-uppercase">FAQ</h4>
+                    <h1 class="faq__subtitle text-center">
+                        Frequently Asked Questions
+                    </h1>
+                </div>
+
+                <div class="faq__items"
+                     id="accordion"
+                     role="tablist"
+                     aria-multiselectable="true">
+                    <div class="panel faq__items__single">
+                        <div class="faq__items__single__heading"
+                             role="tab"
+                             id="headingOne">
+                            <h4 class="">
+                                <a role="button"
+                                   data-toggle="collapse"
+                                   data-parent="#accordion"
+                                   href="#collapseOne"
+                                   aria-expanded="true"
+                                   aria-controls="collapseOne">
+                                    <span>
+                                        Vulputate cras et eu sed. Venenatis imperdiet et
+                                        nulla?
+                                    </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne"
+                             class="panel-collapse collapse in faq__items__single__description"
+                             role="tabpanel"
+                             aria-labelledby="headingOne">
+                            <p class="">
+                                Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                ultricies risus varius enim euismod. Vitae in tempor euismod
+                                proin arcu condimentum amar pulvinar ut mauris id phasellus
+                                tortor lobortis. Lorem ipsum dolor sit amet consectetur.
+                                Lorem ipsum dolor sit amet consectetur. Vitae lectus
+                                ultricies risus varius enim euismod. Vitae in tempor euismod
+                                proin arcu condimentum amar pulvinar ut mauris id phasellus
+                                tortor lobortis. Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Faq Single Item End-->
+
+                    <div class="panel faq__items__single">
+                        <div class="faq__items__single__heading"
+                             role="tab"
+                             id="headingTwo">
+                            <h4 class="">
+                                <a class="collapsed"
+                                   role="button"
+                                   data-toggle="collapse"
+                                   data-parent="#accordion"
+                                   href="#collapseTwo"
+                                   aria-expanded="false"
+                                   aria-controls="collapseTwo">
+                                    Vulputate cras et eu sed. Venenatis imperdiet et nulla?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo"
+                             class="panel-collapse collapse faq__items__single__description"
+                             role="tabpanel"
+                             aria-labelledby="headingTwo">
+                            <p class="">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia
+                                aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee
+                                nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                Leggings occaecat craft beer farm-to-table, raw denim
+                                aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Faq Single Item End-->
+
+                    <div class="panel faq__items__single">
+                        <div class="faq__items__single__heading"
+                             role="tab"
+                             id="headingThree">
+                            <h4 class="">
+                                <a class="collapsed"
+                                   role="button"
+                                   data-toggle="collapse"
+                                   data-parent="#accordion"
+                                   href="#collapseThree"
+                                   aria-expanded="false"
+                                   aria-controls="collapseThree">
+                                    Vulputate cras et eu sed. Venenatis imperdiet et nulla?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree"
+                             class="panel-collapse collapse faq__items__single__description"
+                             role="tabpanel"
+                             aria-labelledby="headingThree">
+                            <p class="">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Totam aliquam dolorum velit labore corporis, neque
+                                voluptatum facere. Possimus animi, laboriosam dolorem
+                                dolores dolorum omnis dicta incidunt ea voluptatem eum.
+                                Necessitatibus nulla fuga eum vitae fugiat id. Temporibus
+                                doloribus, libero aliquam corrupti eveniet praesentium
+                                maiores assumenda explicabo minus porro dolorum qui.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Faq Single Item End-->
+
+                    <div class="panel faq__items__single">
+                        <div class="faq__items__single__heading"
+                             role="tab"
+                             id="headingFour">
+                            <h4 class="">
+                                <a class="collapsed"
+                                   role="button"
+                                   data-toggle="collapse"
+                                   data-parent="#accordion"
+                                   href="#collapseFour"
+                                   aria-expanded="false"
+                                   aria-controls="collapseFour">
+                                    Vulputate cras et eu sed. Venenatis imperdiet et nulla?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour"
+                             class="panel-collapse collapse faq__items__single__description"
+                             role="tabpanel"
+                             aria-labelledby="headingFour">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Totam aliquam dolorum velit labore corporis, neque
+                                voluptatum facere. Possimus animi, laboriosam dolorem
+                                dolores dolorum omnis dicta incidunt ea voluptatem eum.
+                                Necessitatibus nulla fuga eum vitae fugiat id. Temporibus
+                                doloribus, libero aliquam corrupti eveniet praesentium
+                                maiores assumenda explicabo minus porro dolorum qui.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Faq Single Item End-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FAQ Section end-->
+
+
+<!--Footer Section end-->
+<RFooter />
+<!--Footer Section end-->
+</main>
+@code {
+    public override string Name => "Rizz_Pharma";
+
+    public override string Panes => PaneNames.Default + ",banner__section,about_us__section";
+
+    private bool _login = true;
+    private bool _register = true;
+
+    protected override void OnParametersSet()
+    {
+        try
+        {
+            var settings = SettingService.MergeSettings(PageState.Site.Settings, PageState.Page.Settings);
+            _login = bool.Parse(SettingService.GetSetting(settings, GetType().Namespace + ":Login", "true"));
+            _register = bool.Parse(SettingService.GetSetting(settings, GetType().Namespace + ":Register", "true"));
+        }
+        catch
+        {
+            // error loading theme settings
+        }
+    }
+}
