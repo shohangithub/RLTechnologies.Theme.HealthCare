@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>RLTechnologies.Theme.HealthCare</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>RLTechnologies</authors>
     <owners>RLTechnologies</owners>
     <title>HealthCare</title>
@@ -20,8 +20,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Client\bin\Release\net8.0\RLTechnologies.Theme.HealthCare.Client.Oqtane.dll" target="lib\net8.0" /> 
-    <file src="..\Client\bin\Release\net8.0\RLTechnologies.Theme.HealthCare.Client.Oqtane.pdb" target="lib\net8.0" /> 
+    <file src="..\Client\bin\Release\net9.0\RLTechnologies.Theme.HealthCare.Client.Oqtane.dll" target="lib\net9.0" /> 
+    <file src="..\Client\bin\Release\net9.0\RLTechnologies.Theme.HealthCare.Client.Oqtane.pdb" target="lib\net9.0" /> 
     <file src="..\Client\wwwroot\**\*.*" target="wwwroot" /> 
     <file src="icon.png" target="" />
   </files>
