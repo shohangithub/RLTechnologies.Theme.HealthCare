@@ -2,51 +2,14 @@
 @inherits ThemeBase
 @inject ISettingService SettingService
 
- <main role="main">
-<SiteHeader></SiteHeader>
-<!--Default Pane for requied-->    
-<Pane Name="@PaneNames.Default" />
+<main role="main">
+    <SiteHeader></SiteHeader>
+    <!--Default Pane for requied-->
+    <Pane Name="@PaneNames.Default" />
 
     <!--Banner Section Start-->
-    
-    <section>
-        <div class="hero container">
-            <div class="hero__content">
-                <Pane Name="banner__section" />
-                <h1 class="hero__title">
-                    Lorem ipsum dolor sit amet consectetur
-                    <span>vitae lectus ultricies risus.</span>
-                </h1>
+    <Pane Name="banner__section" />
 
-                <h3 class="hero__subtitle">
-                    Lorem ipsum dolor sit amet consectetur
-                </h3>
-
-                <p class="hero__text">
-                    Lorem ipsum dolor sit amet consectetur. Vitae lectus ultricies
-                    risus varius enim euismod. Vitae in tempor euismod proin arcu
-                    condimentum. Lorem ipsum dolor sit amet consectetur. Vitae lectus
-                    ultricies risus varius enim euismod. Vitae in tempor euismod proin
-                    arcu condimentum.
-                </p>
-
-                <div class="hero__cta">
-                    <button type="button"
-                            class="dnn-btn dnn-btn__primary dnn-btn__primary--hero">
-                        Primary
-                    </button>
-                    <button type="button"
-                            class="dnn-btn dnn-btn__secondary dnn-btn__secondary--hero">
-                        Secondary
-                    </button>
-                </div>
-            </div>
-            <div class="hero__img">
-                <img src="/Themes/RLTechnologies.Theme.HealthCare/img/hero-img.png"
-                     alt="Medicine" />
-            </div>
-        </div>
-    </section>
 
     <!--About Section start-->
     <section class="about-us">
@@ -659,11 +622,9 @@
         </div>
     </section>
     <!--FAQ Section end-->
-
-
-<!--Footer Section end-->
-<RFooter />
-<!--Footer Section end-->
+    <!--Footer Section end-->
+    <RFooter />
+    <!--Footer Section end-->
 </main>
 @code {
     public override string Name => "Rizz_Pharma";
